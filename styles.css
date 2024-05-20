@@ -1,0 +1,633 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Play", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a142e;
+  color: #fff;
+  background-image: url("./img/bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+header {
+  padding-top: 26px;
+  margin-bottom: 110px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+.nav_header {
+  max-height: 48px;
+}
+.logo {
+  height: 48px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.auth-buttons button {
+  border: none;
+  padding: 10px 35px;
+  margin-left: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.signup {
+  background-color: #f5b930;
+  color: #3b1f00;
+}
+.login {
+  background-color: #3d1f50;
+  color: #f5ebeb;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1296px;
+  gap: 24px;
+  margin-top: 140px;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.hero-content {
+  max-width: 636px;
+}
+
+.hero-content p {
+  font-size: 32px;
+  margin: 0;
+}
+
+.hero-image img {
+  max-width: 550px;
+  max-height: 550px;
+}
+
+.main_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 25px;
+  column-gap: 25px;
+}
+
+.grid_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid_card-img {
+  width: 100%;
+}
+
+.grid_card-button {
+  margin-top: 21px;
+  cursor: pointer;
+  border: none;
+  background: #11111100;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  text-decoration-line: underline;
+  align-self: self-start;
+}
+
+.popular-games {
+  max-width: 1295px;
+  margin: 0 auto;
+  margin-top: 400px;
+  margin-bottom: 140px;
+}
+.reviews,
+.brands,
+.features,
+.newsletter {
+  padding: 50px 0;
+  max-width: 1295px;
+  margin: 0 auto;
+}
+.container {
+  padding: 20px;
+  margin: 0 auto;
+}
+.games-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.game {
+  text-align: center;
+  margin: 10px;
+}
+.game img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.brands .brand-logos {
+  display: flex;
+  justify-content: space-around;
+}
+.feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+}
+.feature {
+  background-color: #d9d9d920;
+  border-radius: 30px;
+  padding: 62px 36px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.feature_img {
+  width: 140px;
+  height: 140px;
+}
+
+footer {
+  padding: 70px 0;
+}
+.footer-columns {
+  display: flex;
+  max-width: 1295px;
+  margin: 0 auto;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer-column {
+  max-width: 850px;
+}
+
+.brand-logos {
+  margin-top: 90px;
+}
+
+.brand_logo {
+  width: 197px;
+  height: 65px;
+}
+
+.review-carousel {
+  display: flex;
+  transition: 200ms;
+  gap: 20px;
+  width: 100%;
+}
+
+.review {
+  width: 415px;
+  min-height: 293px;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #d9d9d920;
+  margin-left: 26px;
+}
+.review_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.review_photo {
+  max-width: 86px;
+  max-height: 86px;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.review_name {
+  font-size: 24px;
+}
+
+.review_title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.review_subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.carousel-controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-controls button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+
+.menu {
+  display: none;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.507);
+  backdrop-filter: blur(7px);
+}
+
+/* Popup content */
+.popup-content {
+  text-align: center;
+  background-color: #2e2843;
+  margin: 15% auto;
+  padding: 20px;
+
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close {
+  color: #000000;
+  background-color: #f5b930;
+  border-radius: 100%;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.input {
+  border: none;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form styling */
+#signupForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#signupForm label {
+  margin: 10px 0 5px;
+  color: #fff;
+}
+
+#signupForm input {
+  background-color: #3d3558;
+  padding: 10px;
+  margin-bottom: 23px;
+  border: none;
+  border-radius: 20px;
+  height: 35px;
+  font-size: 20px;
+}
+
+#signupForm button {
+  padding: 10px;
+  background-image: linear-gradient(180deg, #f15f5f, #b02967);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: 50px;
+}
+
+#signupForm button:hover {
+  background-color: #e63e3e;
+}
+
+.game_popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.507);
+  backdrop-filter: blur(7px);
+}
+
+.game_iframe {
+  margin-top: 15vh;
+  height: 70%;
+  max-width: 90%;
+  margin-left: 4vw;
+  border-radius: 50px;
+  background-color: #2e2843;
+  border: none;
+  position: relative;
+}
+
+.cross {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: 10vw;
+  top: 17vh;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.error_lable {
+  color: red;
+  font-size: 16px;
+}
+.pp {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+br {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.active {
+  display: block;
+}
+
+.burger_menu {
+  display: none;
+}
+
+@media (max-width: 810px) {
+  .bm_login {
+    border-radius: 30px;
+    background-color: #3d1f50;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .bm_signup {
+    border-radius: 30px;
+    border: none;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+    background-image: linear-gradient(180deg, #f15f5f, #b02967);
+    cursor: pointer;
+  }
+  .burger_menu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    padding: 30px;
+    background-color: #2e2843;
+    width: 30%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  body {
+    overflow-x: hidden;
+    background-size: 400%;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  header {
+    margin-bottom: 0;
+    position: relative;
+    padding-top: 10px;
+  }
+  nav ul {
+    display: none;
+  }
+  .auth-buttons {
+    display: none;
+  }
+  .hero {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .hero-content {
+    padding: 0 20px;
+  }
+
+  .main_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid_card {
+    max-width: 100%;
+  }
+  .games-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brands .brand-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .brands {
+    padding: 0;
+  }
+
+  .brand-logos {
+    margin-top: 40px;
+    gap: 40px;
+  }
+  .popular-games {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+
+  .feature-list {
+    grid-template-columns: 1fr;
+  }
+
+  .feature_img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  .feature {
+    gap: 16px;
+    padding: 24px;
+  }
+  .review_name {
+    font-size: 20px;
+  }
+  .review_title {
+    font-size: 20px;
+  }
+  .review_subtitle {
+    font-size: 16px;
+  }
+  footer {
+    padding-top: 0;
+  }
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  .cross {
+    height: 32px;
+    width: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .bm_login {
+    font-size: 16px;
+  }
+
+  .bm_signup {
+    font-size: 16px;
+  }
+
+  .burger_menu {
+    width: 40%;
+  }
+
+  .hero {
+    padding: 50px 0;
+    margin-top: 0;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .popular-games {
+    margin-top: 250px;
+  }
+
+  .games-list {
+    flex-direction: column;
+  }
+  .game img {
+    width: 100px;
+  }
+
+  .newsletter input {
+    width: 200px;
+  }
+
+  .slick-arrow {
+    display: none;
+  }
+}
