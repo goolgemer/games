@@ -22,6 +22,7 @@ const menu = document.querySelector(".menu");
 const cross = document.querySelector(".cross");
 const bm_btn = document.getElementById("bm_btn");
 const bm = document.querySelector(".burger_menu");
+let iframe = document.querySelector(".game_iframe");
 
 bm_btn.onclick = function () {
   bm.style.display = "none";
@@ -29,6 +30,7 @@ bm_btn.onclick = function () {
 
 cross.onclick = function () {
   popup.style.display = "none";
+  iframe.src = "";
 };
 
 menu.onclick = function () {
@@ -139,7 +141,6 @@ let buttonSix = document.getElementById("6");
 let buttonSeven = document.getElementById("7");
 let buttonEight = document.getElementById("8");
 let popup = document.querySelector(".game_popup");
-let iframe = document.querySelector(".game_iframe");
 
 buttonOne.addEventListener("click", function () {
   popup.style.display = "block";
