@@ -44,24 +44,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var burgerSingupBtn = document.querySelector(".bm_signup");
 
+  var burgerLoginBtn = document.querySelector(".bm_login");
+
   var btnLogin = document.querySelector(".login");
 
   burgerSingupBtn.onclick = function () {
     popup.style.display = "block";
   };
 
-  // btnLogin.onclick = function () {
-  //   popup2.style.display = "block";
-  // };
+  burgerLoginBtn.onclick = function () {
+    popup2.style.display = "block";
+  };
 
-  var span = document.getElementsByClassName("close")[0];
+  btnLogin.onclick = function () {
+    popup2.style.display = "block";
+  };
+
+  let span = document.querySelectorAll(".close");
 
   btn.onclick = function () {
     popup.style.display = "block";
   };
 
-  span.onclick = function () {
+  span[0].onclick = function () {
     popup.style.display = "none";
+  };
+
+  span[1].onclick = function () {
+    popup2.style.display = "none";
   };
 
   window.onclick = function (event) {
@@ -103,6 +113,15 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!isValid) {
         event.preventDefault();
       }
+    });
+
+  document
+    .getElementById("signupForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      document.getElementById("signupForm").style.display = "none";
+      document.getElementById("successMessage").style.display = "block";
     });
 
   function validateEmail(email) {

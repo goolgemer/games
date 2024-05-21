@@ -127,6 +127,8 @@ h3 {
 
 .grid_card-img {
   width: 100%;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .grid_card-button {
@@ -137,7 +139,7 @@ h3 {
   color: #fff;
   font-size: 20px;
   font-weight: 900;
-  text-decoration-line: underline;
+
   align-self: self-start;
 }
 
@@ -304,7 +306,6 @@ footer {
   backdrop-filter: blur(7px);
 }
 
-/* Popup content */
 .popup-content {
   text-align: center;
   background-color: #2e2843;
@@ -334,6 +335,15 @@ footer {
 
 .input {
   border: none;
+  color: white;
+  font-weight: 100;
+  background-color: #3d3558;
+  padding: 10px;
+  margin-bottom: 23px;
+  border-radius: 20px;
+  height: 35px;
+  font-size: 20px;
+  width: 100%;
 }
 
 .close:hover,
@@ -379,6 +389,16 @@ footer {
   background-color: #e63e3e;
 }
 
+.login_button {
+  padding: 10px;
+  background-image: linear-gradient(180deg, #f15f5f, #b02967);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: 50px;
+}
 .game_popup {
   position: fixed;
   width: 100vw;
@@ -405,7 +425,7 @@ footer {
   width: 44px;
   height: 44px;
   position: absolute;
-  right: 10vw;
+  right: 9vw;
   top: 17vh;
   z-index: 3;
   cursor: pointer;
@@ -418,11 +438,6 @@ footer {
 .pp {
   max-width: 70%;
   margin: 0 auto;
-}
-
-br {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .active {
@@ -487,7 +502,7 @@ br {
   header {
     margin-bottom: 0;
     position: relative;
-    padding-top: 10px;
+    padding-top: 0px;
   }
   nav ul {
     display: none;
@@ -582,7 +597,7 @@ br {
     display: block;
     position: absolute;
     left: 10px;
-    top: 10px;
+
     cursor: pointer;
   }
 

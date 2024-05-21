@@ -58,49 +58,49 @@
           <h2>Most popular games 2023</h2>
           <div class="main_grid">
             <div class="grid_card">
-              <img class="grid_card-img" src="./img/game thumb-0.png" alt="" />
+              <img id="1" class="grid_card-img" src="./img/game thumb-0.png" alt="" />
               <button id="1" class="grid_card-button" type="button">
                 Alpha Gold
               </button>
             </div>
             <div class="grid_card">
-              <img class="grid_card-img" src="./img/game thumb-1.png" alt="" />
+              <img id="2" class="grid_card-img" src="./img/game thumb-1.png" alt="" />
               <button  id="2" class="grid_card-button" type="button">
                 Return of the Knight
               </button>
             </div>
             <div class="grid_card">
-              <img class="grid_card-img" src="./img/game thumb-2.png" alt="" />
+              <img id="3" class="grid_card-img" src="./img/game thumb-2.png" alt="" />
               <button  id="3" class="grid_card-button" type="button">
                 Titan Strike
               </button>
             </div>
             <div class="grid_card">
-              <img class="grid_card-img" src="./img/game thumb-3.png" alt="" />
+              <img id="4" class="grid_card-img" src="./img/game thumb-3.png" alt="" />
               <button  id="4" class="grid_card-button" type="button">
                 Golden Dragon
               </button>
             </div>
             <div class="grid_card">
-              <img class="grid_card-img" src="./img/game thumb-4.png" alt="" />
+              <img id="5" class="grid_card-img" src="./img/game thumb-4.png" alt="" />
               <button  id="5" class="grid_card-button" type="button">
                 J-Pop
               </button>
             </div>
             <div class="grid_card">
-              <img class="grid_card-img" src="./img/game thumb-5.png" alt="" />
+              <img id="6" class="grid_card-img" src="./img/game thumb-5.png" alt="" />
               <button  id="6" class="grid_card-button" type="button">
                 Money Train
               </button>
             </div>
             <div class="grid_card">
-              <img class="grid_card-img" src="./img/game thumb-6.png" alt="" />
+              <img id="7" class="grid_card-img" src="./img/game thumb-6.png" alt="" />
               <button  id="7" class="grid_card-button" type="button">
                 Demon Pots
               </button>
             </div>
             <div class="grid_card">
-              <img class="grid_card-img" src="./img/game thumb-7 1.png" alt="" />
+              <img id="8" class="grid_card-img" src="./img/game thumb-7 1.png" alt="" />
               <button  id="8" class="grid_card-button" type="button">
                 Professor BigWin
               </button>
@@ -271,13 +271,21 @@ good
           <button class="input"  type="submit">Sign up</button>
           <p>Already have an account? <a href="#">Login</a></p>
         </form>
+<div style="display: none; padding: 20px;" id="successMessage">
+  <img src="./img/hat.png" alt="">
+  <h2>Please, check your email</h2>
+  <p>To continue registration, follow the instructions from the letter that we sent to your email.</p>
+</div>
+
       </div>
     </div>
 
     <div id="popup2" class="popup">
       <div class="popup-content">
         <span class="close">&times;</span>
-        <form id="loginForm">
+        <form style="    display: flex;
+        flex-direction: column;
+        align-items: center;" id="loginForm">
           <h2>Login</h2>
           <input
             class="input"
@@ -295,7 +303,7 @@ good
             placeholder="Your Password"
             required
           />
-          <button class="input" type="submit">Login</button>
+          <button class="login_button input" type="submit">Login</button>
           <p>Don't have an account? <a href="#">Sign up</a></p>
         </form>
       </div>
