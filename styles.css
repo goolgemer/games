@@ -448,7 +448,45 @@ footer {
   display: none;
 }
 
+.popup18 button {
+  padding: 10px;
+  background-image: linear-gradient(180deg, #f15f5f, #b02967);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  height: 50px;
+  width: 90%;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-weight: 500;
+}
+
+.cookies {
+  background-color: #1a142e;
+
+  position: sticky;
+  bottom: 0px;
+}
+
+.cookies_wrapper {
+  max-width: 1295px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  margin: 0 auto;
+}
+
 @media (max-width: 810px) {
+  .cookies {
+    position: fixed;
+    bottom: 0px;
+  }
+  .cookies_wrapper {
+    display: block;
+  }
   .bm_login {
     border-radius: 30px;
     background-color: #3d1f50;

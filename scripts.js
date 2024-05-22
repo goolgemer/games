@@ -37,6 +37,23 @@ menu.onclick = function () {
   bm.style.display = "flex";
 };
 
+let yes = document.getElementById("yes");
+
+let popup18 = document.querySelector(".popup18");
+
+yes.onclick = function () {
+  popup18.style.display = "none";
+};
+
+let allow = document.getElementById("allow");
+let deny = document.getElementById("deny");
+deny.onclick = function () {
+  allow.parentNode.parentNode.parentNode.style.display = "none";
+};
+allow.onclick = function () {
+  allow.parentNode.parentNode.parentNode.style.display = "none";
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   var popup = document.getElementById("popup");
 
